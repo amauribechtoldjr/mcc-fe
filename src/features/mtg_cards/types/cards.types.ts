@@ -1,0 +1,20 @@
+export type Card = {
+  id: string;
+  oracle_id: string;
+  set_id: string;
+  set: string;
+  lang: string;
+  collector_number: string;
+  name: string;
+  printed_type_line: string;
+  printed_text: string;
+  flavor_text: string;
+  layout: string;
+  cmc: number;
+  color_identity?: string[];
+  color_indicator?: string[];
+  colors?: string[];
+  img_small_uri: string;
+  img_normal_uri: string;
+  last_import_id: string;
+};

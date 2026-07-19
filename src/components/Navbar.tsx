@@ -1,10 +1,9 @@
-import { Link } from "@tanstack/react-router";
-import type { ComponentProps, ReactNode } from "react";
 import { Avatar } from "@components/Avatar";
 import { Container } from "@components/Container";
 import { Typography } from "@components/Typography";
+import { Link } from "@tanstack/react-router";
+import type { ComponentProps, ReactNode } from "react";
 
-/** Mocked until authentication exists. */
 const CURRENT_USER = "AmauribechJr";
 
 export const Navbar = () => {
@@ -37,14 +36,9 @@ export const Navbar = () => {
 type NavLinkProps = {
   children: ReactNode;
   to: ComponentProps<typeof Link>["to"];
-  /** `/` would match every route without this. */
   exact?: boolean;
 };
 
-/**
- * Active state is bold text plus a `morange` bar, deliberately not `morange`
- * text: orange on the light background only reaches 2.8:1 contrast.
- */
 const NavLink = ({ children, to, exact }: NavLinkProps) => {
   return (
     <Link

@@ -6,10 +6,6 @@ type CollectionCardProps = {
   collection: CollectionSummary;
 };
 
-/**
- * Presentational: it never links anywhere. The Home wraps it in a link to the
- * public view, the Collections page wraps it in a link to the editor.
- */
 export const CollectionCard = ({ collection }: CollectionCardProps) => {
   return (
     <Surface

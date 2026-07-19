@@ -6,10 +6,6 @@ type StatsBannerProps = {
   stats: HomeStat[];
 };
 
-/**
- * Full-bleed by design: the `mred` band spans the viewport while its content
- * stays aligned to the page container.
- */
 export const StatsBanner = ({ stats }: StatsBannerProps) => {
   return (
     <section className="bg-mred py-5">

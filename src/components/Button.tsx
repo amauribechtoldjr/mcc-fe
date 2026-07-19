@@ -1,11 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import type { ButtonHTMLAttributes } from "react";
 
-/**
- * Sizing lives in `compoundVariants` rather than in `size` so that the padding
- * of a `default` button never collides with the fixed box of a `circle` one —
- * there is no tailwind-merge here to arbitrate conflicting utilities.
- */
 const buttonStyles = cva(
   "inline-flex cursor-pointer items-center justify-center gap-2 transition focus-visible:ring-2 focus-visible:ring-morange focus-visible:ring-offset-2 focus-visible:ring-offset-mwhite focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
   {

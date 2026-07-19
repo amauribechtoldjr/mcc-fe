@@ -1,16 +1,16 @@
 import { cva, type VariantProps } from "class-variance-authority";
 
 import CardIcon from "@assets/icons/card.svg?react";
+import ChevronLeftIcon from "@assets/icons/chevron-left.svg?react";
+import ChevronRightIcon from "@assets/icons/chevron-right.svg?react";
 import FilterIcon from "@assets/icons/filter.svg?react";
 import PlusIcon from "@assets/icons/plus.svg?react";
 import UserIcon from "@assets/icons/user.svg?react";
 
-/**
- * Icons are SVG files under `@assets/icons`, authored with `currentColor` so
- * they inherit the surrounding text color. Add new icons here to expose them.
- */
 const iconRegistry = {
   card: CardIcon,
+  "chevron-left": ChevronLeftIcon,
+  "chevron-right": ChevronRightIcon,
   filter: FilterIcon,
   plus: PlusIcon,
   user: UserIcon,
