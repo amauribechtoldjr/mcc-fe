@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mred: #4c061d;
+  --color-morange: #d17a22;
+  --color-mwhite: #f2efea;
+  --color-mgreen: #4e6e58;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
